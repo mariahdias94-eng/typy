@@ -290,6 +290,9 @@ nav.links a.active{ color:var(--gold); }
   text-transform:uppercase;
   color:var(--gold);
 }
+.pagehead.centered .wrap{ text-align:center; }
+.pagehead.centered h1,
+.pagehead.centered p.lead{ margin-left:auto; margin-right:auto; }
 
 /* ---------- ESSENCIA / general prose section ---------- */
 .essence{
