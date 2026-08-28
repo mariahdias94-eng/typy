@@ -212,6 +212,11 @@ nav.links a.active{ color:var(--gold); }
   position:absolute; top:0; left:0; right:0; bottom:0; z-index:0;
   background:linear-gradient(180deg, rgba(15,22,16,.65) 0%, rgba(13,20,15,.55) 40%, rgba(11,17,12,.95) 100%);
 }
+.pagehead.strong-shadow::after{
+  content:'';
+  position:absolute; top:0; left:0; right:0; bottom:0; z-index:1;
+  background:rgba(8,13,9,.78);
+}
 .pagehead .wrap{ position:relative; z-index:2; }
 .pagehead .eyebrow{ display:block; margin-bottom:18px; }
 .pagehead h1{
