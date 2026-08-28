@@ -313,11 +313,22 @@ nav.links a.active{ color:var(--gold); }
 
 /* ---------- CYCLE / SPIRAL SIGNATURE (shared circular device) ---------- */
 .circle-wrap{
+  position:relative;
   background:var(--forest-950);
   color:var(--cream-100);
   padding:120px 0 130px;
   overflow:hidden;
 }
+.circle-wrap > img.bg-photo{
+  position:absolute; top:0; left:0; right:0; bottom:0; width:100%; height:100%; object-fit:cover;
+  z-index:0;
+}
+.circle-wrap.with-photo::before{
+  content:'';
+  position:absolute; top:0; left:0; right:0; bottom:0; z-index:1;
+  background:rgba(9,14,10,.8);
+}
+.circle-wrap .wrap{ position:relative; z-index:2; }
 .circle-wrap .head{ text-align:center; max-width:640px; margin:0 auto 70px; }
 .circle-wrap .head .eyebrow{ display:block; margin-bottom:18px; }
 .circle-wrap h2{ font-size:clamp(28px,4vw,40px); color:var(--cream-100); font-weight:400; }
