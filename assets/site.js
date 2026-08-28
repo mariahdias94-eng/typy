@@ -20,6 +20,32 @@
   onScroll();
 })();
 
+// Mobile nav menu toggle
+(function(){
+  var toggle = document.getElementById('navToggle');
+  var links = document.getElementById('navLinks');
+  if (!toggle || !links) return;
+  function closeMenu(){
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+  toggle.addEventListener('click', function(){
+    var isOpen = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', closeMenu);
+  });
+  document.addEventListener('click', function(e){
+    if (!links.classList.contains('open')) return;
+    if (links.contains(e.target) || toggle.contains(e.target)) return;
+    closeMenu();
+  });
+  window.addEventListener('resize', function(){
+    if (window.innerWidth > 980) closeMenu();
+  });
+})();
+
 // Category pill nav active state on marketplace page (scroll spy, lightweight)
 (function(){
   var pills = document.querySelectorAll('.cat-pill');

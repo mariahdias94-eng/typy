@@ -8,6 +8,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -19,14 +22,21 @@
       <img src="assets/logo-mark.png" alt="" width="26" height="26" style="display:block;">
       TYPY
     </a>
-    <nav class="links">
+    <nav class="links" id="navLinks">
       <a href="index.html">Início</a>
       <a href="hub.html" class="active">HUB</a>
       <a href="pd.html">P&amp;D</a>
       <a href="marketplace.html">Marketplace</a>
       <a href="impacto.html">Impacto</a>
     </nav>
-    <a href="mailto:contato@typy.com.br" class="nav-cta">Fale com a gente</a>
+    <div class="nav-right">
+      <a href="mailto:contato@typy.com.br" class="nav-cta">Fale com a gente</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
   </div>
 </header>
 
