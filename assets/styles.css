@@ -243,6 +243,10 @@ nav.links a.active{ color:var(--gold); }
   .pd-hero .eyebrow, .pd-hero h1, .pd-hero p.lead{ opacity:1; animation:none; }
   .hub-hero img{ animation:none; }
   .hub-hero .eyebrow, .hub-hero h1, .hub-hero p.lead{ opacity:1; animation:none; }
+  .mk-hero img{ animation:none; }
+  .mk-hero .eyebrow, .mk-hero h1, .mk-hero p.lead, .mk-hero .badge{ opacity:1; animation:none; }
+  .impact-hero img{ animation:none; }
+  .impact-hero .eyebrow, .impact-hero h1, .impact-hero p.lead{ opacity:1; animation:none; }
   .glow-word{ animation:none; }
 }
 
@@ -310,6 +314,19 @@ nav.links a.active{ color:var(--gold); }
 .hub-hero .eyebrow{ opacity:0; animation:fadeUp .9s ease .1s forwards; }
 .hub-hero h1{ opacity:0; animation:heroTitleIn 1.1s cubic-bezier(.16,.8,.24,1) .25s forwards; }
 .hub-hero p.lead{ opacity:0; animation:fadeUp 1s ease .55s forwards; }
+
+/* ---------- MARKETPLACE HERO ACCENT ---------- */
+.mk-hero img{ animation:heroZoom 20s ease-out forwards; }
+.mk-hero .eyebrow{ opacity:0; animation:fadeUp .9s ease .1s forwards; }
+.mk-hero h1{ opacity:0; animation:heroTitleIn 1.1s cubic-bezier(.16,.8,.24,1) .25s forwards; }
+.mk-hero p.lead{ opacity:0; animation:fadeUp 1s ease .55s forwards; }
+.mk-hero .badge{ opacity:0; animation:fadeUp 1s ease .75s forwards; }
+
+/* ---------- IMPACTO HERO ACCENT ---------- */
+.impact-hero img{ animation:heroZoom 20s ease-out forwards; }
+.impact-hero .eyebrow{ opacity:0; animation:fadeUp .9s ease .1s forwards; }
+.impact-hero h1{ opacity:0; animation:heroTitleIn 1.1s cubic-bezier(.16,.8,.24,1) .25s forwards; }
+.impact-hero p.lead{ opacity:0; animation:fadeUp 1s ease .55s forwards; }
 
 .glow-word{
   color:var(--gold);
