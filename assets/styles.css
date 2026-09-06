@@ -241,6 +241,8 @@ nav.links a.active{ color:var(--gold); }
   .hero-parallax{ transform:none !important; }
   .pd-hero img{ animation:none; }
   .pd-hero .eyebrow, .pd-hero h1, .pd-hero p.lead{ opacity:1; animation:none; }
+  .hub-hero img{ animation:none; }
+  .hub-hero .eyebrow, .hub-hero h1, .hub-hero p.lead{ opacity:1; animation:none; }
   .glow-word{ animation:none; }
 }
 
@@ -302,6 +304,13 @@ nav.links a.active{ color:var(--gold); }
 .pd-hero .eyebrow{ opacity:0; animation:fadeUp .9s ease .1s forwards; }
 .pd-hero h1{ opacity:0; animation:heroTitleIn 1.1s cubic-bezier(.16,.8,.24,1) .25s forwards; }
 .pd-hero p.lead{ opacity:0; animation:fadeUp 1s ease .55s forwards; }
+
+/* ---------- HUB HERO ACCENT ---------- */
+.hub-hero img{ animation:heroZoom 20s ease-out forwards; }
+.hub-hero .eyebrow{ opacity:0; animation:fadeUp .9s ease .1s forwards; }
+.hub-hero h1{ opacity:0; animation:heroTitleIn 1.1s cubic-bezier(.16,.8,.24,1) .25s forwards; }
+.hub-hero p.lead{ opacity:0; animation:fadeUp 1s ease .55s forwards; }
+
 .glow-word{
   color:var(--gold);
   animation:glowPulse 2.6s ease-in-out .3s infinite;
